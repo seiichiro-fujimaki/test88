@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import hason1 from './assets/hason.jpeg'
-import viteLogo from '/vite.svg'
+import hason2 from './assets/hason2.jpeg'
+import hason3 from './assets/hason3.jpeg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -11,16 +13,14 @@ function App() {
       <h2>屋根の破損検査</h2>
 
       <div>
-        <a href="https://trust-coms.com/" target="_blank">
+        {/* <a href="https://trust-coms.com/" target="_blank">
           <img src={viteLogo} alt="Vite logo" />
-        </a>
+        </a> */}
+
         {/* <a href="https://react.dev" target="_blank"> */}
-          <img 
-          
-          src={hason1} 
-          height = "200XP"
-          width  = "200XP"
-          alt="React logo" />
+        <img src={hason1}  height = "200XP"  width  = "200XP"  alt="hason1" className="yane"/>
+        <img src={hason2}  height = "200XP"  width  = "200XP"  alt="hason2" className="yane"/> 
+        <img src={hason3}  height = "200XP"  width  = "200XP"  alt="hason3" className="yane"/> 
 
         {/* </a> */}
       </div>
