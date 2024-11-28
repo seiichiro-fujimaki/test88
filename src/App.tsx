@@ -8,15 +8,22 @@ function App() {
 
   return (
     <>
+      <h2>屋根の破損検査</h2>
+
       <div>
         <a href="https://trust-coms.com/" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={hason1} className="logo react" alt="React logo" />
-        </a>
+        {/* <a href="https://react.dev" target="_blank"> */}
+          <img 
+          
+          src={hason1} 
+          height = "200XP"
+          width  = "200XP"
+          alt="React logo" />
+
+        {/* </a> */}
       </div>
-      <h1>Vite + React</h1>
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
