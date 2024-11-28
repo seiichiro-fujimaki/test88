@@ -18,23 +18,26 @@ function App() {
         </a> */}
 
         {/* <a href="https://react.dev" target="_blank"> */}
-        <img src={hason1}  height = "200XP"  width  = "200XP"  alt="hason1" className="yane"/>
-        <img src={hason2}  height = "200XP"  width  = "200XP"  alt="hason2" className="yane"/> 
-        <img src={hason3}  height = "200XP"  width  = "200XP"  alt="hason3" className="yane"/> 
+        <img src={hason1}  height = "300XP"  width  = "300XP"  alt="hason1" className="yane"/>
+        <img src={hason2}  height = "300XP"  width  = "300XP"  alt="hason2" className="yane"/> 
+        <img src={hason3}  height = "300XP"  width  = "300XP"  alt="hason3" className="yane"/> 
 
         {/* </a> */}
       </div>
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          検査回数: {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      </div>
+        
+      <div className="card">
+          <button onClick={() => setCount((count) => count + 1)}>
+            検査実行
+          </button>
       </div>
       <p className="read-the-docs">
-        Click on thes 品田
+      ©TRUST
       </p>
     </>
   )
