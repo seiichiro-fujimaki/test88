@@ -45,6 +45,8 @@ function App() {
       <p className="read-the-docs">
       ©TRUST
       </p>
+
+      <button onClick={signOut}>Sign out　〇〇〇</button>
     </>
   )}
    </Authenticator>
