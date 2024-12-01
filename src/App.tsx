@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <h2>屋根の破損検査 2024/11/29〇✖□</h2>
+      <h2>屋根の破損検査 2024/11/29〇✖✖</h2>
 
       <div>
         {/* <a href="https://trust-coms.com/" target="_blank">
