@@ -4,11 +4,17 @@ import hason2 from './assets/hason2.jpeg'
 import hason3 from './assets/hason3.jpeg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import { Authenticator } from '@aws-amplify/ui-react'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
+    <Authenticator>
+      {({ signOut }) => (
+
+
+
     <>
       <h2>屋根の破損検査 2024/11/29〇✖✖</h2>
 
@@ -27,7 +33,7 @@ function App() {
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          検査回数: {count}
+          検査回数: {count} 
         </button>
       </div>
         
@@ -40,6 +46,9 @@ function App() {
       ©TRUST
       </p>
     </>
+  )}
+   </Authenticator>
+
   )
 }
 

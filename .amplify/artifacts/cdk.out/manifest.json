@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/c645a4942997d70f27eddd1dfeb369392a0e086a665d200adcdab61926518113.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/883569b9668bfff5e1af5a08af4cbe06d50ca2d841782c610055b90abf6461fe.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -63,6 +63,198 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "region"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifytest88trustsandboxf0d1317871authamplifyAuthUserPoolAppClientA9C25F23Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871authamplifyAuthUserPoolAppClientA9C25F23Ref"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifytest88trustsandboxf0d1317871authamplifyAuthIdentityPool95C43EF3Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871authamplifyAuthIdentityPool95C43EF3Ref"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/groups": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "groups"
           }
         ],
         "/amplify-test88-trust-sandbox-f0d1317871/CDKMetadata/Default": [
