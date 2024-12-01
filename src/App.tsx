@@ -46,7 +46,7 @@ function App() {
       ©TRUST
       </p>
 
-      <button onClick={signOut}>Sign out　〇〇〇</button>
+     <button onClick={signOut}>Sign out　〇〇〇</button>
     </>
   )}
    </Authenticator>
