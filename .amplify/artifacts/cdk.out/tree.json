@@ -270,6 +270,80 @@
                           "fqn": "aws-cdk-lib.aws_iam.CfnRole",
                           "version": "2.171.0"
                         }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": "lambda:InvokeFunction",
+                                      "Effect": "Allow",
+                                      "Resource": [
+                                        {
+                                          "Ref": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn"
+                                        },
+                                        {
+                                          "Fn::Join": [
+                                            "",
+                                            [
+                                              {
+                                                "Ref": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn"
+                                              },
+                                              ":*"
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Action": "lambda:InvokeFunction",
+                                      "Effect": "Allow",
+                                      "Resource": [
+                                        {
+                                          "Ref": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn"
+                                        },
+                                        {
+                                          "Fn::Join": [
+                                            "",
+                                            [
+                                              {
+                                                "Ref": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn"
+                                              },
+                                              ":*"
+                                            ]
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873",
+                                "roles": [
+                                  {
+                                    "Ref": "amplifyAuthauthenticatedUserRoleD8DA3689"
+                                  }
+                                ]
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                              "version": "2.171.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.Policy",
+                          "version": "2.171.0"
+                        }
                       }
                     },
                     "constructInfo": {
@@ -431,6 +505,22 @@
                   "version": "10.4.2"
                 }
               },
+              "reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn": {
+                "id": "reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/auth/reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnParameter",
+                  "version": "2.171.0"
+                }
+              },
+              "reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn": {
+                "id": "reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/auth/reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnParameter",
+                  "version": "2.171.0"
+                }
+              },
               "amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref": {
                 "id": "amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref",
                 "path": "amplify-test88-trust-sandbox-f0d1317871/auth/amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref",
@@ -471,6 +561,20 @@
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
                   "aws:cdk:cloudformation:props": {
+                    "parameters": {
+                      "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn": {
+                        "Fn::GetAtt": [
+                          "function1351588B",
+                          "Outputs.amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn"
+                        ]
+                      },
+                      "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn": {
+                        "Fn::GetAtt": [
+                          "function1351588B",
+                          "Outputs.amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn"
+                        ]
+                      }
+                    },
                     "tags": [
                       {
                         "key": "amplify:deployment-type",
@@ -497,7 +601,7 @@
                           {
                             "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
                           },
-                          "/d0e13d3cfc04c93af27aa09f739b679a139fa0461fea2e03d1b43a2cc6104dac.json"
+                          "/2df1a34d50dd6ce24a4b9f3cc425e3969b12980830059d46b395e02e1a3c394b.json"
                         ]
                       ]
                     }
@@ -669,6 +773,511 @@
           "groups": {
             "id": "groups",
             "path": "amplify-test88-trust-sandbox-f0d1317871/groups",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.171.0"
+            }
+          },
+          "function": {
+            "id": "function",
+            "path": "amplify-test88-trust-sandbox-f0d1317871/function",
+            "children": {
+              "hello-world": {
+                "id": "hello-world",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world",
+                "constructInfo": {
+                  "fqn": "constructs.Construct",
+                  "version": "10.4.2"
+                }
+              },
+              "hello-world-lambda": {
+                "id": "hello-world-lambda",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda",
+                "children": {
+                  "ServiceRole": {
+                    "id": "ServiceRole",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/ServiceRole",
+                    "children": {
+                      "ImportServiceRole": {
+                        "id": "ImportServiceRole",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/ServiceRole/ImportServiceRole",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.Resource",
+                          "version": "2.171.0"
+                        }
+                      },
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/ServiceRole/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                          "aws:cdk:cloudformation:props": {
+                            "assumeRolePolicyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sts:AssumeRole",
+                                  "Effect": "Allow",
+                                  "Principal": {
+                                    "Service": "lambda.amazonaws.com"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "managedPolicyArns": [
+                              {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    "arn:",
+                                    {
+                                      "Ref": "AWS::Partition"
+                                    },
+                                    ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "tags": [
+                              {
+                                "key": "amplify:deployment-type",
+                                "value": "sandbox"
+                              },
+                              {
+                                "key": "amplify:friendly-name",
+                                "value": "hello-world"
+                              },
+                              {
+                                "key": "created-by",
+                                "value": "amplify"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                          "version": "2.171.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Role",
+                      "version": "2.171.0"
+                    }
+                  },
+                  "Code": {
+                    "id": "Code",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Code",
+                    "children": {
+                      "Stage": {
+                        "id": "Stage",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Code/Stage",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.AssetStaging",
+                          "version": "2.171.0"
+                        }
+                      },
+                      "AssetBucket": {
+                        "id": "AssetBucket",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Code/AssetBucket",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_s3.BucketBase",
+                          "version": "2.171.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
+                      "version": "2.171.0"
+                    }
+                  },
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                      "aws:cdk:cloudformation:props": {
+                        "code": {
+                          "s3Bucket": {
+                            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+                          },
+                          "s3Key": "44f7bb6f2929792ba8d3c7e80200d38166d734b7ada1aade29a4ac4819304115.zip"
+                        },
+                        "environment": {
+                          "variables": {
+                            "AMPLIFY_SSM_ENV_CONFIG": "{}"
+                          }
+                        },
+                        "handler": "index.handler",
+                        "memorySize": 512,
+                        "role": {
+                          "Fn::GetAtt": [
+                            "helloworldlambdaServiceRole1E1C4841",
+                            "Arn"
+                          ]
+                        },
+                        "runtime": "nodejs18.x",
+                        "tags": [
+                          {
+                            "key": "amplify:deployment-type",
+                            "value": "sandbox"
+                          },
+                          {
+                            "key": "amplify:friendly-name",
+                            "value": "hello-world"
+                          },
+                          {
+                            "key": "created-by",
+                            "value": "amplify"
+                          }
+                        ],
+                        "timeout": 3
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
+                      "version": "2.171.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
+                  "version": "2.171.0"
+                }
+              },
+              "invoke-bedrock": {
+                "id": "invoke-bedrock",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock",
+                "constructInfo": {
+                  "fqn": "constructs.Construct",
+                  "version": "10.4.2"
+                }
+              },
+              "invoke-bedrock-lambda": {
+                "id": "invoke-bedrock-lambda",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda",
+                "children": {
+                  "ServiceRole": {
+                    "id": "ServiceRole",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole",
+                    "children": {
+                      "ImportServiceRole": {
+                        "id": "ImportServiceRole",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/ImportServiceRole",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.Resource",
+                          "version": "2.171.0"
+                        }
+                      },
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                          "aws:cdk:cloudformation:props": {
+                            "assumeRolePolicyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sts:AssumeRole",
+                                  "Effect": "Allow",
+                                  "Principal": {
+                                    "Service": "lambda.amazonaws.com"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "managedPolicyArns": [
+                              {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    "arn:",
+                                    {
+                                      "Ref": "AWS::Partition"
+                                    },
+                                    ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                                  ]
+                                ]
+                              }
+                            ],
+                            "tags": [
+                              {
+                                "key": "amplify:deployment-type",
+                                "value": "sandbox"
+                              },
+                              {
+                                "key": "amplify:friendly-name",
+                                "value": "invoke-bedrock"
+                              },
+                              {
+                                "key": "created-by",
+                                "value": "amplify"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                          "version": "2.171.0"
+                        }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": [
+                                        "bedrock:InvokeModel",
+                                        "bedrock:InvokeModelWithResponseStream"
+                                      ],
+                                      "Effect": "Allow",
+                                      "Resource": "arn:aws:bedrock:us-east-1::foundation-model/*"
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF",
+                                "roles": [
+                                  {
+                                    "Ref": "invokebedrocklambdaServiceRole2FCBF387"
+                                  }
+                                ]
+                              }
+                            },
+                            "constructInfo": {
+                              "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                              "version": "2.171.0"
+                            }
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.Policy",
+                          "version": "2.171.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Role",
+                      "version": "2.171.0"
+                    }
+                  },
+                  "Code": {
+                    "id": "Code",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Code",
+                    "children": {
+                      "Stage": {
+                        "id": "Stage",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Code/Stage",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.AssetStaging",
+                          "version": "2.171.0"
+                        }
+                      },
+                      "AssetBucket": {
+                        "id": "AssetBucket",
+                        "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Code/AssetBucket",
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_s3.BucketBase",
+                          "version": "2.171.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
+                      "version": "2.171.0"
+                    }
+                  },
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                      "aws:cdk:cloudformation:props": {
+                        "code": {
+                          "s3Bucket": {
+                            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+                          },
+                          "s3Key": "5df0c6c1dd85264626be81a9931a58dd56a038263a7af189ed07df26a41c7b50.zip"
+                        },
+                        "environment": {
+                          "variables": {
+                            "AMPLIFY_SSM_ENV_CONFIG": "{}"
+                          }
+                        },
+                        "handler": "index.handler",
+                        "memorySize": 512,
+                        "role": {
+                          "Fn::GetAtt": [
+                            "invokebedrocklambdaServiceRole2FCBF387",
+                            "Arn"
+                          ]
+                        },
+                        "runtime": "nodejs18.x",
+                        "tags": [
+                          {
+                            "key": "amplify:deployment-type",
+                            "value": "sandbox"
+                          },
+                          {
+                            "key": "amplify:friendly-name",
+                            "value": "invoke-bedrock"
+                          },
+                          {
+                            "key": "created-by",
+                            "value": "amplify"
+                          }
+                        ],
+                        "timeout": 3
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
+                      "version": "2.171.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_lambda_nodejs.NodejsFunction",
+                  "version": "2.171.0"
+                }
+              },
+              "CDKMetadata": {
+                "id": "CDKMetadata",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/CDKMetadata",
+                "children": {
+                  "Default": {
+                    "id": "Default",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/CDKMetadata/Default",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.CfnResource",
+                      "version": "2.171.0"
+                    }
+                  },
+                  "Condition": {
+                    "id": "Condition",
+                    "path": "amplify-test88-trust-sandbox-f0d1317871/function/CDKMetadata/Condition",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.CfnCondition",
+                      "version": "2.171.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "constructs.Construct",
+                  "version": "10.4.2"
+                }
+              },
+              "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn": {
+                "id": "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.171.0"
+                }
+              },
+              "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn": {
+                "id": "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.171.0"
+                }
+              },
+              "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827ERef": {
+                "id": "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827ERef",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827ERef",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.171.0"
+                }
+              },
+              "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97ARef": {
+                "id": "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97ARef",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97ARef",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.171.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.NestedStack",
+              "version": "2.171.0"
+            }
+          },
+          "function.NestedStack": {
+            "id": "function.NestedStack",
+            "path": "amplify-test88-trust-sandbox-f0d1317871/function.NestedStack",
+            "children": {
+              "function.NestedStackResource": {
+                "id": "function.NestedStackResource",
+                "path": "amplify-test88-trust-sandbox-f0d1317871/function.NestedStack/function.NestedStackResource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::CloudFormation::Stack",
+                  "aws:cdk:cloudformation:props": {
+                    "tags": [
+                      {
+                        "key": "amplify:deployment-type",
+                        "value": "sandbox"
+                      },
+                      {
+                        "key": "created-by",
+                        "value": "amplify"
+                      }
+                    ],
+                    "templateUrl": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          "https://s3.",
+                          {
+                            "Ref": "AWS::Region"
+                          },
+                          ".",
+                          {
+                            "Ref": "AWS::URLSuffix"
+                          },
+                          "/",
+                          {
+                            "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
+                          },
+                          "/5e4e57433675426b86188ac4bd7fc4c29e7da9fefe551fe70d22fc1d97c0edaf.json"
+                        ]
+                      ]
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnStack",
+                  "version": "2.171.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.4.2"
+            }
+          },
+          "definedFunctions": {
+            "id": "definedFunctions",
+            "path": "amplify-test88-trust-sandbox-f0d1317871/definedFunctions",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.171.0"
+            }
+          },
+          "customOutputs": {
+            "id": "customOutputs",
+            "path": "amplify-test88-trust-sandbox-f0d1317871/customOutputs",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
               "version": "2.171.0"

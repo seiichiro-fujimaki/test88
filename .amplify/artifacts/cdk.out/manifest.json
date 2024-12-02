@@ -22,7 +22,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/883569b9668bfff5e1af5a08af4cbe06d50ca2d841782c610055b90abf6461fe.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/2009f20af6d63744087067808eec74cc936dbfd2291183ecaf4e7b48d8e6ed76.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -89,6 +89,12 @@
             "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
           }
         ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/authenticatedUserRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleDefaultPolicy82E52873"
+          }
+        ],
         "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
@@ -111,6 +117,18 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/auth/reference-to-amplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputs.amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifytest88trustsandboxf0d1317871functionNestedStackfunctionNestedStackResource222024E8Outputsamplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn"
           }
         ],
         "/amplify-test88-trust-sandbox-f0d1317871/auth/amplifytest88trustsandboxf0d1317871authamplifyAuthUserPool484120D9Ref": [
@@ -255,6 +273,90 @@
           {
             "type": "aws:cdk:logicalId",
             "data": "groups"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloworldlambdaServiceRole1E1C4841"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "helloworldlambda89B27E55"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambdaServiceRole2FCBF387"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambdaServiceRoleDefaultPolicy03E99BDF"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "invokebedrocklambda0FD83EDB"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827EArn"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97AArn"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827ERef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871functionhelloworldlambdaB0C7827ERef"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function/amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97ARef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifytest88trustsandboxf0d1317871functioninvokebedrocklambdaEBF7F97ARef"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/function.NestedStack/function.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "function1351588B"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/definedFunctions": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "definedFunctions"
+          }
+        ],
+        "/amplify-test88-trust-sandbox-f0d1317871/customOutputs": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "customOutputs"
           }
         ],
         "/amplify-test88-trust-sandbox-f0d1317871/CDKMetadata/Default": [

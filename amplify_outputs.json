@@ -25,5 +25,9 @@
     },
     "unauthenticated_identities_enabled": true
   },
-  "version": "1.3"
+  "version": "1.3",
+  "custom": {
+    "helloWorldFunctionName": "amplify-test88-trust-sand-helloworldlambda89B27E55-oUh4o1SAqmpx",
+    "invokeBedrockFunctionName": "amplify-test88-trust-sand-invokebedrocklambda0FD83-A43DcdbB84Cb"
+  }
 }
