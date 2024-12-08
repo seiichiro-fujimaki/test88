@@ -188,7 +188,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "5df0c6c1dd85264626be81a9931a58dd56a038263a7af189ed07df26a41c7b50.zip"
+     "S3Key": "8c64f432d0a0798ea2c53fec665c05282363e9ae344b10407c8c16de90348257.zip"
     },
     "Environment": {
      "Variables": {
@@ -228,7 +228,7 @@
    "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Resource",
-    "aws:asset:path": "asset.5df0c6c1dd85264626be81a9931a58dd56a038263a7af189ed07df26a41c7b50",
+    "aws:asset:path": "asset.8c64f432d0a0798ea2c53fec665c05282363e9ae344b10407c8c16de90348257",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
