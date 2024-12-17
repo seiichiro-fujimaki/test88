@@ -6,10 +6,7 @@ declare global {
   namespace awslambda {
     function streamifyResponse(
       f: (
-        event: APIGatewayProxyEvent,
-        responseStream: Writable,
-        _context: Context
-      ) => Promise<void>
+        event: APIGatewayProxyEvent, responseStream: Writable, _context: Context ) => Promise<void>
     ): Handler;
   }
 }
@@ -21,13 +18,28 @@ export const handler: Handler = awslambda.streamifyResponse(
   async (event: APIGatewayProxyEvent, responseStream: Writable, _context: Context) => 
   {
     const client = new BedrockRuntimeClient({ region: "ap-northeast-1" });
-    const values = Object.values(event);
-    const prompt = values[0] || "default prompt";
+    const prompt = Object.values(event)[0];
+    const image  = Object.values(event)[1];
+
     const payload = { 
         anthropic_version: "bedrock-2023-05-31", 
         max_tokens: 1000, 
         messages: [
-            { role: "user", content: [{ type: "text", text: prompt }] }
+            { role: "user", 
+              content: [
+                          { 
+                            type: "image", 
+                            source: {
+                              type: "base64",
+                              media_type: "image/jpeg",
+                              data: image,
+                            }
+                           },
+                          { 
+                            type: "text", 
+                            text: prompt || "default prompt"
+                          }
+          ] }
         ]
     };
 

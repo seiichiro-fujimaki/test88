@@ -29,16 +29,37 @@ function App() {
     }
   }
 
+ // Base64エンコード関数
+ const convertToBase64 = async (imageUrl: string) => {
+  const response = await fetch(imageUrl);
+  const blob = await response.blob();
+  return new Promise((resolve) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result?.toString().split(',')[1]); // Base64部分のみ取得
+    reader.readAsDataURL(blob);
+  });
+};
+
   async function invokeBedrock() {
     const { credentials } = await fetchAuthSession()
     const awsRegion = outputs.auth.aws_region
     const functionName = outputs.custom.invokeBedrockFunctionName
     const labmda = new LambdaClient({ credentials: credentials, region: awsRegion })
 
+   // 画像をBase64形式に変換
+   const base64Image = await convertToBase64(hason1);
+
+   // Lambdaに送信するPayloadを作成
+   const payload = {
+    prompt: prompt,
+    image: base64Image, // Base64形式の画像データ
+  };
+
     const command = new InvokeWithResponseStreamCommand({
           FunctionName: functionName,
-          Payload: new TextEncoder().encode(JSON.stringify({ prompt: prompt }))
+          Payload: new TextEncoder().encode(JSON.stringify( payload ))
     })
+
     const apiResponse = await labmda.send(command);
 
     let completeMessage = ''
@@ -46,7 +67,8 @@ function App() {
       for await (const item of apiResponse.EventStream) {
         if (item.PayloadChunk) {
           const payload = new TextDecoder().decode(item.PayloadChunk.Payload)
-          completeMessage = completeMessage + payload
+          // completeMessage = completeMessage + payload
+          completeMessage += payload
           setAiMessage(completeMessage)
         }
       }
@@ -57,16 +79,13 @@ function App() {
     <Authenticator>
       {({ signOut, user }) => (
         <>
+          <p>
+            自動高所点検・検査：　
+            UserName:   {user?.signInDetails?.loginId}
+          </p>
           <img src={hason1}  height = "300XP"  width  = "300XP"  alt="hason1" className="yane"/>
           <img src={hason2}  height = "300XP"  width  = "300XP"  alt="hason2" className="yane"/> 
           <img src={hason3}  height = "300XP"  width  = "300XP"  alt="hason3" className="yane"/> 
-          <p>
-            User: {user?.signInDetails?.loginId}
-          </p>
-          <p>
-            <button onClick={invokeHelloWorld}>invokeHelloWorld</button>
-            <div>{text}</div>
-          </p>
           <p>
             <textarea
               onChange={(e) => setPrompt(e.target.value)}
@@ -84,6 +103,11 @@ function App() {
             <br />
             <button onClick={signOut}>サインアウト</button>
           </p>
+          <p>
+            <button onClick={invokeHelloWorld}>Invoke_Confirmation</button>
+            <div>{text}</div>
+          </p>
+
         </>
       )}
     </Authenticator>

@@ -58,7 +58,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "44f7bb6f2929792ba8d3c7e80200d38166d734b7ada1aade29a4ac4819304115.zip"
+     "S3Key": "17dfeccad9d0e9dca0d550ede6de98900774f4a0880aa2b93ca9e8d7c47e6207.zip"
     },
     "Environment": {
      "Variables": {
@@ -97,7 +97,7 @@
    "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-test88-trust-sandbox-f0d1317871/function/hello-world-lambda/Resource",
-    "aws:asset:path": "asset.44f7bb6f2929792ba8d3c7e80200d38166d734b7ada1aade29a4ac4819304115",
+    "aws:asset:path": "asset.17dfeccad9d0e9dca0d550ede6de98900774f4a0880aa2b93ca9e8d7c47e6207",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
@@ -188,7 +188,7 @@
      "S3Bucket": {
       "Fn::Sub": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}"
      },
-     "S3Key": "8c64f432d0a0798ea2c53fec665c05282363e9ae344b10407c8c16de90348257.zip"
+     "S3Key": "acc3e4fed3a67f96104b6a95b282d26834c44c3992772236b890c754be95720a.zip"
     },
     "Environment": {
      "Variables": {
@@ -228,7 +228,7 @@
    "DeletionPolicy": "Delete",
    "Metadata": {
     "aws:cdk:path": "amplify-test88-trust-sandbox-f0d1317871/function/invoke-bedrock-lambda/Resource",
-    "aws:asset:path": "asset.8c64f432d0a0798ea2c53fec665c05282363e9ae344b10407c8c16de90348257",
+    "aws:asset:path": "asset.acc3e4fed3a67f96104b6a95b282d26834c44c3992772236b890c754be95720a",
     "aws:asset:is-bundled": true,
     "aws:asset:property": "Code"
    }
